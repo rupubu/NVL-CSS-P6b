@@ -10,11 +10,17 @@
       div > p {
         border: 2px solid #fabada;
       }
+      /* He probado esta opción que he encontrado en https://www.w3schools.com/cssref/sel_firstchild.asp
+         Pero no funciona como debería.
       p:first-child {
         text-transform: uppercase;
         color: blue;
+      } */
+      p.importante { /* Creo esto es lo que hay que hacer pero te agradecería que me lo confirmes */
+        text-transform: uppercase;
+        color: blue;
       }
-      p.importante ~ p {
+      p.importante + p {
         color: red;
       }
     </style>
