@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Práctica de selectores (II)</title>
+    <style media="screen">
+div p {
+    border: 2px solid #fabada;
+}
+
+.importante + p {
+    color: red;
+}
+    </style>
+  </head>
+  <body>
+    <h1>Práctica de selectores (II)</h1>
+    <div>
+      <h3>Dentro DIV</h3>
+      <p class="importante">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Integer egestas iaculis ipsum ut vestibulum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div>
+        <h3>Dentro de DIV/DIV</h3>
+        <p class="importante">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Integer egestas iaculis ipsum ut vestibulum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+    <h3>Fuera de DIV</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Integer egestas iaculis ipsum ut vestibulum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </body>
+</html>
